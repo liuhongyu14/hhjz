@@ -1,0 +1,39 @@
+{
+  "name": "haohao-jizhang",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc --noEmit && vite build",
+    "typecheck:api": "tsc -p tsconfig.api.json",
+    "preview": "vite preview --host 0.0.0.0",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "cap:init": "cap init 好好记账 com.haohao.jizhang --web-dir=dist",
+    "cap:sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@ionic/vue": "^8.3.3",
+    "@neondatabase/serverless": "^0.10.4",
+    "bcryptjs": "^2.4.3",
+    "drizzle-orm": "^0.36.4",
+    "jose": "^5.9.6",
+    "pinia": "^2.2.4",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/ios": "^6.1.2",
+    "@vercel/node": "^3.2.27",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "drizzle-kit": "^0.27.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
+  }
+}

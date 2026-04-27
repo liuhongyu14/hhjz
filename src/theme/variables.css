@@ -1,0 +1,44 @@
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --page-bg: linear-gradient(180deg, #f4f8ff 0%, #f9fbff 36%, #ffffff 100%);
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --card-soft: rgba(255, 255, 255, 0.78);
+  --text-main: #101828;
+  --text-sub: #667085;
+  --line-soft: rgba(15, 23, 42, 0.08);
+  --primary: #2878ff;
+  --primary-strong: #135ef2;
+  --primary-soft: rgba(40, 120, 255, 0.12);
+  --shadow-soft: 0 22px 60px rgba(42, 80, 160, 0.12);
+  --tab-bg: rgba(255, 255, 255, 0.92);
+}
+
+:root[data-theme='dark'] {
+  --page-bg: radial-gradient(circle at top, #23314e 0%, #111827 42%, #090d14 100%);
+  --card-bg: rgba(16, 24, 40, 0.88);
+  --card-soft: rgba(16, 24, 40, 0.72);
+  --text-main: #f8fafc;
+  --text-sub: #c2ccda;
+  --line-soft: rgba(255, 255, 255, 0.1);
+  --primary: #4f8eff;
+  --primary-strong: #76a6ff;
+  --primary-soft: rgba(79, 142, 255, 0.18);
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.34);
+  --tab-bg: rgba(15, 23, 42, 0.94);
+}
+
+:root[data-theme='warm'] {
+  --page-bg: linear-gradient(180deg, #fff9f2 0%, #fff4e8 34%, #fffdf8 100%);
+  --card-bg: rgba(255, 251, 246, 0.94);
+  --card-soft: rgba(255, 248, 240, 0.84);
+  --text-main: #3b2f2f;
+  --text-sub: #8a6f60;
+  --line-soft: rgba(107, 74, 50, 0.1);
+  --primary: #c98538;
+  --primary-strong: #b66f20;
+  --primary-soft: rgba(201, 133, 56, 0.14);
+  --shadow-soft: 0 24px 60px rgba(187, 134, 87, 0.14);
+  --tab-bg: rgba(255, 250, 244, 0.95);
+}
+
