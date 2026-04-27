@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import bcrypt from 'bcryptjs';
 import { eq } from 'drizzle-orm';
-import { db } from '../_db';
-import { setSessionCookie, signSession } from '../_auth';
-import { handleApiError, methodNotAllowed, parseBody, setApiHeaders } from '../_http';
-import { authSchema } from '../_schemas';
-import { serializeUser } from '../_serializers';
-import { users } from '../../drizzle/schema';
+import { db } from '../_db.js';
+import { setSessionCookie, signSession } from '../_auth.js';
+import { handleApiError, methodNotAllowed, parseBody, setApiHeaders } from '../_http.js';
+import { authSchema } from '../_schemas.js';
+import { serializeUser } from '../_serializers.js';
+import { users } from '../../drizzle/schema.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   setApiHeaders(res);

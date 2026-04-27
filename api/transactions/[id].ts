@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { and, eq } from 'drizzle-orm';
-import { requireSession } from '../_auth';
-import { db } from '../_db';
-import { handleApiError, methodNotAllowed, notFound, parseBody, readId, setApiHeaders } from '../_http';
-import { updateTransactionSchema, uuidSchema } from '../_schemas';
-import { serializeTransaction } from '../_serializers';
-import { ensureOwnedCategory, ensureOwnedTags } from '../_ownership';
-import { transactionTags, transactions } from '../../drizzle/schema';
+import { requireSession } from '../_auth.js';
+import { db } from '../_db.js';
+import { handleApiError, methodNotAllowed, notFound, parseBody, readId, setApiHeaders } from '../_http.js';
+import { updateTransactionSchema, uuidSchema } from '../_schemas.js';
+import { serializeTransaction } from '../_serializers.js';
+import { ensureOwnedCategory, ensureOwnedTags } from '../_ownership.js';
+import { transactionTags, transactions } from '../../drizzle/schema.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   setApiHeaders(res);

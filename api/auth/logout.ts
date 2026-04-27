@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { clearSessionCookie } from '../_auth';
-import { methodNotAllowed, setApiHeaders } from '../_http';
+import { clearSessionCookie } from '../_auth.js';
+import { methodNotAllowed, setApiHeaders } from '../_http.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   setApiHeaders(res);

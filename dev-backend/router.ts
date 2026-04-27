@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import { randomUUID } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { readSession, signSession } from '../api/_auth';
+import { readSession, signSession } from '../api/_auth.js';
 
 type MaybePromise<T> = T | Promise<T>;
 type ThemeName = 'light' | 'dark' | 'warm';

@@ -1,11 +1,11 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { eq } from 'drizzle-orm';
-import { requireSession } from './_auth';
-import { db } from './_db';
-import { handleApiError, methodNotAllowed, parseBody, setApiHeaders } from './_http';
-import { updateMeSchema } from './_schemas';
-import { serializeUser } from './_serializers';
-import { users } from '../drizzle/schema';
+import { requireSession } from './_auth.js';
+import { db } from './_db.js';
+import { handleApiError, methodNotAllowed, parseBody, setApiHeaders } from './_http.js';
+import { updateMeSchema } from './_schemas.js';
+import { serializeUser } from './_serializers.js';
+import { users } from '../drizzle/schema.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   setApiHeaders(res);

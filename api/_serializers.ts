@@ -1,4 +1,4 @@
-import type { categories, tags, transactionTags, transactions, users } from '../drizzle/schema';
+import type { categories, tags, transactionTags, transactions, users } from '../drizzle/schema.js';
 
 type UserRow = typeof users.$inferSelect;
 type CategoryRow = typeof categories.$inferSelect;

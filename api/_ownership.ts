@@ -1,6 +1,6 @@
 import { and, eq, inArray } from 'drizzle-orm';
-import { db } from './_db';
-import { categories, tags } from '../drizzle/schema';
+import { db } from './_db.js';
+import { categories, tags } from '../drizzle/schema.js';
 
 export async function ensureOwnedCategory(userId: string, categoryId?: string | null) {
   if (!categoryId) return null;
