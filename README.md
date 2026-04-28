@@ -1,5 +1,6 @@
 # 好好记账
 
+在线访问地址：https://hhjz.vercel.app/home
 基于 UI 稿、需求文档和交互文档生成的首版 H5 / 混合 App 程序。前端使用 Vue 3 + Vite + Ionic Vue + Pinia，登录后会直接走 `/api` 后端，后端保留 Vercel Functions + Neon PostgreSQL + Drizzle ORM 的真实接入能力。
 
 ## 已实现范围
